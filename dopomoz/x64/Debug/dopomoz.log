@@ -1,0 +1,6 @@
+﻿  AnimatedSprite.cpp
+C:\Users\Karol Ś\source\repos\dopomoz\dopomoz\AnimatedSprite.cpp(4,34): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Karol Ś\source\repos\dopomoz\dopomoz\AnimatedSprite.cpp(4,18): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+  dopomoz.cpp
+  Generowanie kodu...
+  dopomoz.vcxproj -> C:\Users\Karol Ś\source\repos\dopomoz\x64\Debug\dopomoz.exe

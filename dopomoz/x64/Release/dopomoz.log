@@ -1,0 +1,124 @@
+﻿Kompilacja rozpoczęła się 2023-05-16 21:24:43.
+Szczegółowość rejestrowania została ustawiona na: Normal.     1>Projekt „C:\Users\Karol Ś\source\repos\dopomoz\dopomoz\dopomoz.vcxproj” w węźle 2 (elementy docelowe: Build).
+     1>InitializeBuildStatus:
+         Trwa tworzenie „x64\Release\dopomoz.tlog\unsuccessfulbuild”, ponieważ określono "AlwaysCreate".
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\bin\HostX64\x64\CL.exe /c /I"C:\SFML-Visual\SFML-2.5.1\include" /Zi /nologo /W3 /WX- /diagnostics:column /sdl /O2 /Oi /GL /D _UNICODE /D UNICODE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"x64\Release\\" /Fd"x64\Release\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt AnimatedSprite.cpp
+         AnimatedSprite.cpp
+     1>C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xmemory(680,47): error C2665: „std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>::unique_ptr”: żadna przeciążona funkcja nie może przekonwertować wszystkich typów argumentów
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3142,5): message : może to być „std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>::unique_ptr<mage,std::default_delete<mage>,0>(std::unique_ptr<mage,std::default_delete<mage>> &&) noexcept”
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xmemory(680,47): message : „std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>::unique_ptr<mage,std::default_delete<mage>,0>(std::unique_ptr<mage,std::default_delete<mage>> &&) noexcept”: nie można dokonać konwersji argumentu 1 z „_Ty” do „std::unique_ptr<mage,std::default_delete<mage>> &&”
+                 with
+                 [
+                     _Ty=std::unique_ptr<mage,std::default_delete<mage>> (__cdecl &)(void)
+                 ]
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xmemory(680,68): message : Przyczyna: nie można skonwertować z "_Ty" na "std::unique_ptr<mage,std::default_delete<mage>>"
+                 with
+                 [
+                     _Ty=std::unique_ptr<mage,std::default_delete<mage>> (__cdecl &)(void)
+                 ]
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xmemory(680,68): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3148,5): message : lub       "std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>::unique_ptr(std::auto_ptr<_Other> &&) noexcept"
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xmemory(680,47): message : „std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>::unique_ptr(std::auto_ptr<_Other> &&) noexcept”: nie można wywnioskować argumentu szablon dla elementu „std::auto_ptr<_Other> &&” z „std::unique_ptr<mage,std::default_delete<mage>> (void)”
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3134,5): message : lub       "std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>::unique_ptr(std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>> &&) noexcept"
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xmemory(680,68): message : "inicjowanie": nie można konwertować z "_Ty" na "std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>> &&"
+                 with
+                 [
+                     _Ty=std::unique_ptr<mage,std::default_delete<mage>> (__cdecl &)(void)
+                 ]
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xmemory(680,68): message : Przyczyna: nie można skonwertować z "_Ty" na "std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>"
+                 with
+                 [
+                     _Ty=std::unique_ptr<mage,std::default_delete<mage>> (__cdecl &)(void)
+                 ]
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xmemory(680,68): message : Żaden konstruktor nie mógł przyjąć typu źródłowego lub rozpoznanie przeciążenia konstruktora było niejednoznaczne
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3131,5): message : lub       "std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>::unique_ptr(sf::Drawable *,std::default_delete<sf::Drawable> &&)"
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xmemory(680,47): message : „std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>::unique_ptr(sf::Drawable *,std::default_delete<sf::Drawable> &&)”: oczekuje 2 argumentów — podano 1
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3126,5): message : lub       "std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>::unique_ptr(sf::Drawable *,_Dx &&) noexcept"
+                 with
+                 [
+                     _Dx=std::default_delete<sf::Drawable>
+                 ]
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xmemory(680,47): message : „std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>::unique_ptr(sf::Drawable *,_Dx &&) noexcept”: oczekuje 2 argumentów — podano 1
+                 with
+                 [
+                     _Dx=std::default_delete<sf::Drawable>
+                 ]
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3122,5): message : lub       "std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>::unique_ptr(sf::Drawable *,const _Dx &) noexcept"
+                 with
+                 [
+                     _Dx=std::default_delete<sf::Drawable>
+                 ]
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xmemory(680,47): message : „std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>::unique_ptr(sf::Drawable *,const _Dx &) noexcept”: oczekuje 2 argumentów — podano 1
+                 with
+                 [
+                     _Dx=std::default_delete<sf::Drawable>
+                 ]
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3119,5): message : lub       "std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>::unique_ptr(sf::Drawable *) noexcept"
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xmemory(680,68): message : "inicjowanie": nie można konwertować z "_Ty" na "sf::Drawable *"
+                 with
+                 [
+                     _Ty=std::unique_ptr<mage,std::default_delete<mage>> (__cdecl &)(void)
+                 ]
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xmemory(680,68): message : Brak kontekstu, w którym ta konwersja jest możliwa
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3109,5): message : lub       "std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>::unique_ptr(std::nullptr_t) noexcept"
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xmemory(680,68): message : "inicjowanie": nie można konwertować z "_Ty" na "std::nullptr_t"
+                 with
+                 [
+                     _Ty=std::unique_ptr<mage,std::default_delete<mage>> (__cdecl &)(void)
+                 ]
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xmemory(680,68): message : nullptr może zostać skonwertowany tylko na typ wskaźnika lub typ dojścia
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3106,5): message : lub       "std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>::unique_ptr(void) noexcept"
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xmemory(680,47): message : „std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>::unique_ptr(void) noexcept”: oczekuje 0 argumentów — podano 1
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xmemory(680,47): message : podczas próby dopasowania listy argumentów "(_Ty)"
+                 with
+                 [
+                     _Ty=std::unique_ptr<mage,std::default_delete<mage>> (__cdecl &)(void)
+                 ]
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\vector(852): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „void std::_Default_allocator_traits<_Alloc>::construct<_Ty,std::unique_ptr<mage,std::default_delete<mage>>(__cdecl &)(void)>(_Alloc &,_Objty *const ,std::unique_ptr<mage,std::default_delete<mage>> (__cdecl &)(void))” funkcji szablon
+                 with
+                 [
+                     _Alloc=std::allocator<std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>>,
+                     _Ty=std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>,
+                     _Objty=std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>
+                 ]
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\vector(863,36): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „void std::_Default_allocator_traits<_Alloc>::construct<_Ty,std::unique_ptr<mage,std::default_delete<mage>>(__cdecl &)(void)>(_Alloc &,_Objty *const ,std::unique_ptr<mage,std::default_delete<mage>> (__cdecl &)(void))” funkcji szablon
+                 with
+                 [
+                     _Alloc=std::allocator<std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>>,
+                     _Ty=std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>,
+                     _Objty=std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>
+                 ]
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\vector(839): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_back_with_unused_capacity<std::unique_ptr<mage,std::default_delete<mage>>(__cdecl &)(void)>(std::unique_ptr<mage,std::default_delete<mage>> (__cdecl &)(void))” funkcji szablon
+                 with
+                 [
+                     _Ty=std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>
+                 ]
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\vector(845,13): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_back_with_unused_capacity<std::unique_ptr<mage,std::default_delete<mage>>(__cdecl &)(void)>(std::unique_ptr<mage,std::default_delete<mage>> (__cdecl &)(void))” funkcji szablon
+                 with
+                 [
+                     _Ty=std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>
+                 ]
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\vector(925): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_one_at_back<std::unique_ptr<mage,std::default_delete<mage>>(__cdecl &)(void)>(std::unique_ptr<mage,std::default_delete<mage>> (__cdecl &)(void))” funkcji szablon
+                 with
+                 [
+                     _Ty=std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>
+                 ]
+       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\vector(927,14): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_one_at_back<std::unique_ptr<mage,std::default_delete<mage>>(__cdecl &)(void)>(std::unique_ptr<mage,std::default_delete<mage>> (__cdecl &)(void))” funkcji szablon
+                 with
+                 [
+                     _Ty=std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>
+                 ]
+       C:\Users\Karol Ś\source\repos\dopomoz\dopomoz\AnimatedSprite.cpp(9): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „void std::vector<std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>,std::allocator<std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>>>::emplace_back<std::unique_ptr<mage,std::default_delete<mage>>(__cdecl &)(void)>(std::unique_ptr<mage,std::default_delete<mage>> (__cdecl &)(void))” funkcji szablon
+     1>Kompilowanie projektu „C:\Users\Karol Ś\source\repos\dopomoz\dopomoz\dopomoz.vcxproj” wykonane (elementy docelowe: Build) — NIEPOWODZENIE.
+
+Kompilacja NIE POWIODŁA SIĘ.
+
+       „C:\Users\Karol Ś\source\repos\dopomoz\dopomoz\dopomoz.vcxproj” (element docelowy Build) (1) ->
+       (element docelowy ClCompile) -> 
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xmemory(680,47): error C2665: „std::unique_ptr<sf::Drawable,std::default_delete<sf::Drawable>>::unique_ptr”: żadna przeciążona funkcja nie może przekonwertować wszystkich typów argumentów
+
+    Ostrzeżenia: 0
+    Liczba błędów: 1
+
+Czas, który upłynął: 00:00:02.09
